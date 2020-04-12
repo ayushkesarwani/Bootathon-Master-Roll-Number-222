@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Experiment No. 1</title>
+    </head>
+    <body>
+        
+        <h1><center> Experiment - DML(Data Manipulation Language)</center></h1>
+        <img src="http://vlabs.iitb.ac.in/vlabs-dev/labs/dblab/gulogo.jpeg" align="right" style="width: 150px; height: 140px; display: inline; ">
+        <br>
+        <h2>AIM :- 
+        <h4>        To understand the concept of implementing Data Manipulation Language(DML) statements.</h4>
+        </h2>
+        <h2>THEORY :-</h2>
+        <ol type ="1">
+        <li><h4> Insert:</h4></li>
+        <p>The INSERT into statement is part of the Data Manipulation Language commands. It is used to insert a new row in a table. There are two ways of using INSERT statement for inserting rows:
+        </p>
+        <ol type="i">
+        <li><b>Only Values</b></li>
+        <p>The first method is to specify only the value of the data to be inserted without the column names.
+        <br>
+            <b>Syntax:</b>
+            INSERT INTO table_name VALUES (value1, value2, value3,...,value n);</p>
+        
+        <li><b>Selected Column Insert:</b></li>
+        <p>In the second method, we will specify both the columns which we want to fill and their corresponding values as shown below:
+        <br>
+            <b>Syntax:</b>            
+            INSERT INTO table_name (column1, column2, column3,..,column n) VALUES ( value1, value2, value3,..,value n);</p>
+        </ol>
+
+
+        
+        <li><h4> Update:</h4></li>
+        <p>The UPDATE statement is part of the Data Manipulation Language commands. It is used to update the data of an existing table in the database. We can update single columns as well as multiple columns using UPDATE statement as per user's requirement.
+        <br>
+            <b>Syntax :</b>
+            UPDATE table_name SET column1 = value1, column2 = value2,... WHERE condition;</p>
+        <ol type="i">
+        <li><b>Only Values</b></li>
+        <p>The UPDATE statement updates columns in the existing table’s rows with new values. The SET clause indicates which column data should be modified and new values that they should hold. Here we omitted where clause so all table rows are updated.
+            <br>
+            Example: UPDATE employee SET salary = 4000;</p>
+        <li><b>Updating records conditionally :</b> </li>
+        <p>The UPDATE statement updates columns in the existing table’s rows with new values based on the WHERE condition. The SET clause indicates which column data should be modified and WHERE clause indicates which row in table will satisfy the condition and update row(s) with the new value.
+            <br>
+            UPDATE employee SET salary = 4000 WHERE empno = 21;
+            <br>
+            Hence, in the above example empno 21, salary will be updated to 4000.</p>
+        </ol>
+
+        
+        <li><h4> Delete:</h4></li>
+        <p>The DELETE Statement in SQL is used to delete existing records from a table. We can delete a single record or multiple records depending on the condition we specify in the WHERE clause.
+            <br>
+            <b>Syntax : </b>
+            DELETE FROM table_name WHERE some_condition;</p>
+        </ol>
+
+
+
+
+
+        <h2>PROCEDURE : </h2>
+        <ol type="1">
+            <li>Write Query in the Query Editor and click on Execute Query button.</li>
+            <li>If you are existing user and want to save/restore your data, use Credentials.</li>
+            <li>Refer video for more details:</li>
+        </ol>
+        <iframe width="420" height="315"
+            src="https://youtu.be/6CzfqZU2k0c">
+        </iframe>
+
+    </body>
+</html>

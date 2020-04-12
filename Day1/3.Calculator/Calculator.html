@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<HTML LANG="EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width initial-scale=1.0">
+    <title> Calculator</title>
+    <style>
+        tr{
+            border : solid;
+        }
+        td{
+            border:solid;
+        }
+    </style>
+    <script src="app.js" defer>
+
+    </script>
+</head>
+<body>
+    <table style="width:50%;text-align :center;">
+    <tr>
+        <td colspan="2">Num 1 : 
+            <input type="text" id="t1" style="width:50 px;">
+        </td>
+        <td colspan="2" >Num 2 : 
+            <input type="text" id="t2" style="width:50 px;">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" id="b1" style="width:25 px;" value="ADD" onclick="add();">
+        </td>
+        <td>
+            <input type="button" id="b2" style="width:25 px;" value="SUB" onclick="sub();">
+        </td>
+        <td>
+            <input type="button" id="b3" style="width:25 px;" value="MUL" onclick="mul();">
+        </td>
+        <td>
+            <input type="button" id="b4" style="width:25 px;" value="DIV" onclick="div();">
+        </td>
+
+    </tr>
+    <tr>
+        <td colspan="4">Ans : 
+            <input type="text" id="t3" style="width:100 px;">
+        </td>
+    </tr>
+    </table>
+</body>
+</HTML>
